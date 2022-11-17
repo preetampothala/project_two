@@ -1,0 +1,360 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+main {
+  max-width: 80%;
+  margin: 2.5rem auto;
+}
+body {
+  background-color: rgb(255, 255, 255);
+  font-family: "Adobe Clean", sans-serif;
+  padding: 0.9rem;
+  height: 100vh;
+}
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+  align-items: center;
+  /* margin: 1.5rem; */
+}
+.app {
+  /* opacity: 0; */
+  display: none;
+  transition: all 1s;
+}
+.errormessage {
+  color: rgb(255, 60, 60);
+  background-color: #ffdada;
+  transition: all 1s;
+
+  justify-content: space-between;
+  margin: 0 2rem;
+}
+.errormessage p,
+i {
+  padding: 1rem;
+}
+.errormessage i {
+  cursor: pointer;
+}
+.apperrormessage {
+  display: none;
+  margin: 1rem 1rem;
+}
+.loginerrormessage {
+  display: none;
+}
+.logo {
+  width: 150px;
+}
+.login {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.login input {
+  /* width: 100%; */
+  width: 100px;
+  padding: 10px 10px;
+  border-radius: 5px;
+  border: rgb(228, 228, 228) 1px solid;
+  margin: 0 0.5rem;
+  font-family: "Adobe Clean", sans-serif;
+}
+.login-btn {
+  display: block;
+  border: none;
+  background-color: #f1712c;
+  color: white;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 3px;
+  font-weight: 500;
+  font-family: "Adobe Clean", sans-serif;
+  font-size: 0.9rem;
+  /* margin: 1rem auto; */
+  /* text-transform: uppercase; */
+}
+.logout-btn {
+  display: none;
+  border: none;
+  background-color: #f1712c;
+  color: white;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 3px;
+  font-weight: 500;
+  font-family: "Adobe Clean", sans-serif;
+  font-size: 0.9rem;
+  /* margin: 1rem auto; */
+  /* text-transform: uppercase; */
+}
+.create-account {
+  width: 40vw;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  padding: 1rem 1.5rem;
+  box-shadow: 0px 0px 7px 2px rgba(70, 63, 63, 0.1);
+  border-radius: 0.3rem;
+  margin: 5rem auto;
+  justify-content: space-between;
+}
+.create {
+  width: 100%;
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.flexchildleft {
+  flex: 50%;
+  display: flex;
+  flex-direction: column;
+}
+.flexchildright {
+  flex: 50%;
+  display: flex;
+  flex-direction: column;
+  align-self: stretch;
+}
+.boxleft {
+  flex-basis: 45%;
+  background-color: white;
+  padding: 1rem 1.5rem;
+  box-shadow: 0px 0px 7px 2px rgba(70, 63, 63, 0.1);
+  border-radius: 0.3rem;
+  margin: 1rem;
+}
+.forms {
+  display: flex;
+  flex-wrap: wrap;
+}
+.boxright {
+  background-color: white;
+  padding: 1rem 0m;
+  box-shadow: 0px 0px 7px 2px rgba(70, 63, 63, 0.1);
+  border-radius: 0.3rem;
+  margin: 1rem;
+}
+.boxright h3 {
+  padding: 1rem 1.5rem;
+  border-bottom: 1px solid #eee;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background-color: #fff;
+}
+
+.balance {
+  display: flex;
+  justify-content: space-between;
+  margin: 0.5rem 1rem;
+}
+
+.form-group {
+  margin: 1rem 0;
+}
+.form-group input {
+  width: 100%;
+  padding: 10px 10px;
+  border-radius: 5px;
+  border: rgb(228, 228, 228) 1px solid;
+  font-family: "Adobe Clean", sans-serif;
+}
+.form-group select {
+  width: 100%;
+  padding: 10px 10px;
+  border-radius: 5px;
+  border: rgb(228, 228, 228) 1px solid;
+  font-family: "Adobe Clean", sans-serif;
+}
+.form-group label {
+  margin-bottom: 0.5rem;
+  display: block;
+}
+.form-group #color-input {
+  padding: 1px 1px;
+}
+.form-loan {
+  display: flex;
+  flex-direction: column;
+}
+.form-delete {
+  display: flex;
+  flex-direction: column;
+}
+.fields {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.delfield {
+  flex-basis: 48%;
+}
+/* .inputs {
+	display: flex;
+	flex: 50%;
+	justify-content: space-between;
+} */
+.btn {
+  width: 100%;
+  border: none;
+  background-color: #f1712c;
+  color: white;
+  padding: 15px 20px;
+  cursor: pointer;
+  border-radius: 3px;
+  font-weight: 500;
+  font-family: "Adobe Clean", sans-serif;
+  font-size: 16px;
+  margin: 1rem auto;
+  /* text-transform: uppercase; */
+}
+.loan-btn {
+  width: 100%;
+  border: none;
+  background-color: #f1712c;
+  color: white;
+  padding: 15px 20px;
+  cursor: pointer;
+  border-radius: 3px;
+  font-weight: 500;
+  font-family: "Adobe Clean", sans-serif;
+  font-size: 16px;
+  margin-top: 6.3rem;
+  margin-bottom: 1rem;
+  /* text-transform: uppercase; */
+}
+.btn-sort {
+  width: 25%;
+  border: none;
+  background-color: #f1712c;
+  color: white;
+  padding: 15px 20px;
+  cursor: pointer;
+  border-radius: 3px;
+  font-weight: 500;
+  font-family: "Adobe Clean", sans-serif;
+  font-size: 16px;
+  /* margin: 1rem auto; */
+  /* text-transform: uppercase; */
+}
+.summary {
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem;
+}
+.transactions {
+  overflow: scroll;
+  height: 55vh;
+}
+.transactions-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 1.5rem;
+  align-items: center;
+  border-bottom: 2px solid rgb(255, 255, 255);
+}
+
+.hidden {
+  display: none;
+}
+.transactions-type {
+  flex-basis: 25%;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: #fff;
+  padding: 0.3rem 1rem 0.3rem 1rem;
+  border-radius: 4rem;
+  margin: 0 1rem;
+  text-align: center;
+}
+.transaction-date {
+  color: black;
+  flex-basis: 25%;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  padding: 0.3rem 1rem 0.3rem 1rem;
+  border-radius: 4rem;
+  margin: 0 1rem;
+  text-align: left;
+}
+.trcount {
+  flex-basis: 10%;
+  /* width: 5%; */
+  text-align: left;
+}
+.transactions-value {
+  text-align: end;
+  flex-basis: 25%;
+}
+.transactions-type-Deposit {
+  background-image: linear-gradient(to top left, #39b385, #9be15d);
+}
+.transactions-type-Withdrawl {
+  background-image: linear-gradient(to top left, #e52a5a, #ff585f);
+}
+.Deposit {
+  background-color: #effff9;
+}
+.Withdrawl {
+  background-color: #fff0ee;
+}
+.error-msg {
+  color: red;
+  font-size: 1rem;
+  margin: 1rem auto;
+  text-align: left;
+}
+.positive {
+  color: green;
+}
+.negative {
+  color: red;
+}
+.summaryvaluein,
+.summaryvalueinterest {
+  color: green;
+}
+
+.summaryvalueout {
+  color: red;
+}
+.logout-timer {
+  margin: 1rem;
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 2rem;
+    align-items: center;
+  }
+  h3 {
+    margin: 0.5rem 0 1.5rem 0;
+  }
+  .boxleft {
+    /* flex: 1; */
+    background-color: #fff;
+    padding: 1rem 1.5rem;
+    box-shadow: 0px 0px 7px 2px rgb(70 63 63 / 10%);
+    border-radius: 0.3rem;
+    margin: 1rem;
+    width: 100%;
+  }
+  main {
+    max-width: 100%;
+    margin: 2.5rem 1rem;
+  }
+}
